@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f9;
+}
+aside {
+    width: 250px;
+    background-color: #343a40;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+aside .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+aside .logo img {
+    width: 60px;
+    height: auto;
+}
+
+aside .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    text-align: center;
+}
+
+aside h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+aside button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+aside button:hover {
+    background-color: #0056b3;
+}
+
+aside a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px; 
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+aside a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+aside input[type="text"],
+aside input[type="number"],
+aside select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+aside h2, 
+aside p {
+    text-align: center;
+}
+
+aside .logout-container {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+aside a.logout-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+aside a.logout-button:hover {
+    background-color: #c82333;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.logo--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo--title .buenalogo {
+    height: 80px;
+    width: auto;
+    margin: 0 15px;
+}
+
+.logo--title .mswdlogo {
+    height: 85px;
+    width: auto;
+    margin: 0 15px;
+}
+
+.logo--title p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#main-content {
+    margin-left: 280px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 2% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.close {
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+.modal-content h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.modal-content input[type="text"], 
+.modal-content input[type="email"],
+.modal-content input[type="number"],
+.modal-content input[type="password"],
+.modal-content select {
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.modal-content button:hover {
+    background-color: #d32f2f;
+}
+
+#openModalButton {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#openModalButton:hover {
+    background-color: #0f5dc3;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+table tr th{
+    margin-right: 20px;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+}
+.content-table thead tr{
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th, .content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid rgb(221, 210, 210);
+}
+
+.input-group i {
+    margin-left: 90%;
+    position: relative;
+    top: -30px;
+    right: 10px;
+}
